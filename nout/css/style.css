@@ -1,0 +1,595 @@
+.panel {
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+
+.list {
+    width: 390px;
+    height: 605px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.list ul {
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list li {
+    padding: 0px 15px 0px 8px;
+    color: gray;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #d9d9d9;
+    line-height: 43px;
+}
+
+.list li:last-child {
+    border-bottom: none;
+}
+
+.list li {
+    position: relative;
+}
+
+.list li i {
+    position: absolute;
+    right: 8px;
+    top: 14px;
+}
+
+li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#elect {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.elect:hover #elect {
+    display: block;
+}
+
+#health {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.health:hover #health {
+    display: block;
+}
+
+#pc_lt {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.pc_lt:hover #pc_lt {
+    display: block;
+}
+
+#laptop {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.laptop:hover #laptop {
+    display: block;
+}
+
+#pc {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.pc:hover #pc {
+    display: block;
+}
+
+#peripherals {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.peripherals:hover #peripherals {
+    display: block;
+}
+
+#display {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.display:hover #display {
+    display: block;
+}
+
+#mobile {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.mobile:hover #mobile {
+    display: block;
+}
+
+#phone {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.phone:hover #phone {
+    display: block;
+}
+
+#tablet {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.tablet:hover #tablet {
+    display: block;
+}
+
+#mobile_accessories {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.mobile_accessories:hover #mobile_accessories {
+    display: block;
+}
+
+#home_items {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.home_items:hover #home_items {
+    display: block;
+}
+
+#dish {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.dish:hover #dish {
+    display: block;
+}
+
+#smart_home {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.smart_home:hover #smart_home {
+    display: block;
+}
+
+#components_accessories {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.components_accessories:hover #components_accessories {
+    display: block;
+}
+
+#serv_net {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.serv_net:hover #serv_net {
+    display: block;
+}
+
+#design {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.design:hover #design {
+    display: block;
+}
+
+#furniture {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.furniture:hover #furniture {
+    display: block;
+}
+
+#car {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.car:hover #car {
+    display: block;
+}
+
+#tools {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.tools:hover #tools {
+    display: block;
+}
+
+#office {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.office:hover #office {
+    display: block;
+}
+
+#sport {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.sport:hover #sport {
+    display: block;
+}
+
+#activity_holidays {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.activity_holidays:hover #activity_holidays {
+    display: block;
+}
+
+#camping {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.camping:hover #camping {
+    display: block;
+}
+
+#sport1 {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.sport1:hover #sport1 {
+    display: block;
+}
+
+#toys {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.toys:hover #toys {
+    display: block;
+}
+
+#educat {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.educat:hover #educat {
+    display: block;
+}
+
+#toys1 {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.toys1:hover #toys1 {
+    display: block;
+}
+
+#clothes_accessories {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.clothes_accessories:hover #clothes_accessories {
+    display: block;
+}
+
+#clothes {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.clothes:hover #clothes {
+    display: block;
+}
+
+#accessories {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.accessories:hover #accessories {
+    display: block;
+}
+
+#sun {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding-left: 12px;
+    border-radius: 5px;
+    display: none;
+}
+
+.sun:hover #sun {
+    display: block;
+}
+
+.banners {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.banners .banners_item1 {
+    padding-bottom: 40px;
+
+}
+
+.banners .banners_item1 img {
+    border-radius: 10px;
+    width: 995px;
+    height: 280px;
+}
+
+.banners .item2_item1 {
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.banners .item2_item1 img {
+    padding: 10px;
+}
+
+.banners .item2_item2 {
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.banners .item2_item2 img {
+    padding: 10px;
+}
