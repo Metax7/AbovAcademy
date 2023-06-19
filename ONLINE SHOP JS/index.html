@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="cart">
+        <div class="cart_counter" id="counter">
+            0
+        </div>
+        <div class="cart_icon">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;" id="bars"></i>
+        </div>
+    </div>
+
+    <div class="shop">
+        <div class="product">
+            <div class="product_item">
+                <div class="item_name">
+                    <p>
+                        IPhone 11
+                    </p>
+                </div>
+                <div class="item_img">
+                    <img src="img/11.png" class="product_image" alt="">
+                </div>
+                <div class="item_price">
+                    <p>
+                        $600
+                    </p>
+                </div>
+                <button id="hopar" onclick="ADD1()">ADD</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_item">
+                <div class="item_name">
+                    <p>
+                        IPhone 12
+                    </p>
+                </div>
+                <div class="item_img">
+                    <img src="img/12.png" class="product_image" alt="">
+                </div>
+                <div class="item_price">
+                    <p>
+                        $700
+                    </p>
+                </div>
+                <button onclick="ADD2()">ADD</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_item">
+                <div class="item_name">
+                    <p>
+                        IPhone 13
+                    </p>
+                </div>
+                <div class="item_img">
+                    <img src="img/13.png" class="product_image" alt="">
+                </div>
+                <div class="item_price">
+                    <p>
+                        $800
+                    </p>
+                </div>
+                <button onclick="ADD3()">ADD</button>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product_item">
+                <div class="item_name">
+                    <p>
+                        IPhone 14
+                    </p>
+                </div>
+                <div class="item_img">
+                    <img src="img/14.png" class="product_image" alt="">
+                </div>
+                <div class="item_price">
+                    <p>
+                        $900
+                    </p>
+                </div>
+                <button onclick="ADD4()">ADD</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="carsine">
+        <div class="clear">
+            <button id="clear">
+                CLEAR ALL
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
