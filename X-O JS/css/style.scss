@@ -1,0 +1,104 @@
+body {
+    background-color: #0b0b13;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.score {
+    display: flex;
+    color: white;
+    font-size: 60px;
+    margin-top: 100px;
+    justify-content: center;
+
+    .x {
+        padding-right: 35px;
+        border-right: 1px solid #fff;
+    }
+
+    .ciecle {
+        margin-left: 35px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 10px solid white;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+
+    span {
+        color: tomato;
+    }
+}
+
+#game {
+    display: flex;
+    border: 1px solid #fff;
+    flex-wrap: wrap;
+    width: 390px;
+    height: 390px;
+    margin: auto;
+    margin-top: 70px;
+
+    .btn {
+        width: 130px;
+        height: 130px;
+        font-size: 100px;
+        border: 1px solid #000;
+
+        &:disabled {
+            background-color: tomato;
+            border: 1px solid #000;
+            color: #000;
+        }
+    }
+}
+
+#winner_x {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -250px;
+    margin-left: 100px;
+    color: white;
+    font-size: 80px;
+
+    .win_x {
+        background-color: tomato;
+        padding: 10px 40px;
+        border-radius: 20px;
+    }
+}
+
+#winner_o {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -360px;
+    margin-right: 100px;
+    color: white;
+    font-size: 80px;
+
+    .win_o {
+        background-color: tomato;
+        padding: 10px 40px;
+        border-radius: 20px;
+    }
+}
+
+#again_btn {
+    position: absolute;
+    margin-top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    #again {
+
+        font-size: 40px;
+        padding: 10px 30px;
+        background-color: tomato;
+        color: white;
+        cursor: pointer;
+        border-color: #fff;
+    }
+}
