@@ -10,6 +10,7 @@ let rowX = document.createElement("div")
 let rowO = document.createElement("div")
 let againBtn = document.getElementById("again_btn")
 let rowAgainBtn = document.createElement("button")
+let drawCount = 0
 
 game.onclick = function (event) {
     if (event.target.className == "btn") {
@@ -26,6 +27,9 @@ game.onclick = function (event) {
         }
     }
     checkWinner()
+    if (drawCount === 9) {
+        tryAgain()
+    }
 }
 function checkWinner() {
     if (gameBtn[0].innerHTML == "X" && gameBtn[1].innerHTML == "X" && gameBtn[2].innerHTML == "X" ||
@@ -96,11 +100,22 @@ function tryAgain() {
         againBtn.appendChild(rowAgainBtn)
         rowAgainBtn.setAttribute("id", "again")
         rowAgainBtn.innerHTML = "TRY AGAIN"
+    } else {
+        winnerX.appendChild(rowX);
+        rowX.setAttribute("class", "win_x");
+        rowX.innerHTML = "It's a draw!";
+        winnerO.appendChild(rowO);
+        rowO.setAttribute("class", "win_o");
+        rowO.innerHTML = "It's a draw!";
+        againBtn.appendChild(rowAgainBtn);
+        rowAgainBtn.setAttribute("id", "again");
+        rowAgainBtn.innerHTML = "TRY AGAIN";
     }
 }
 
 rowAgainBtn.onclick = function () {
     count = 0
+    drawCount = 0
     xScoreCount = 0
     oScoreCount = 0
     xScore.innerHTML = xScoreCount
