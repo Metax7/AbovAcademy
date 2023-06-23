@@ -4,7 +4,10 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.score {
+.container{
+    max-width: 2000px;
+    margin: auto;
+    .score {
     display: flex;
     color: white;
     font-size: 60px;
@@ -101,4 +104,5 @@ body {
         cursor: pointer;
         border-color: #fff;
     }
+}
 }
