@@ -27,14 +27,14 @@ game.onclick = function (event) {
             count++
             drawCount++
         }
-        if (drawCount % 9 === 0 && drawCount > 0) {
-            for (let i = 0; i < gameBtn.length; i++) {
-                gameBtn[i].innerHTML = " ";
-                gameBtn[i].disabled = false
-            }
-        }
     }
     checkWinner()
+    if (drawCount % 9 === 0 && drawCount > 0) {
+        for (let i = 0; i < gameBtn.length; i++) {
+            gameBtn[i].innerHTML = " ";
+            gameBtn[i].disabled = false
+        }
+    }
 }
 
 function checkWinner() {
