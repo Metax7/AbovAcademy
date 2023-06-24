@@ -1,4 +1,5 @@
 let count = 0;
+let drawCount = 0
 let gameBtn = document.getElementsByClassName("btn")
 let xScoreCount = 0
 let oScoreCount = 0
@@ -18,15 +19,24 @@ game.onclick = function (event) {
             event.target.setAttribute("disabled", true)
             event.target.style.color = "white"
             count++
+            drawCount ++
         }else{
             event.target.innerHTML = "O"
             event.target.setAttribute("disabled", true)
             event.target.style.color = "white"
             count++
+            drawCount++
+        }
+        if (drawCount % 9 === 0 && drawCount > 0) {
+            for (let i = 0; i < gameBtn.length; i++) {
+                gameBtn[i].innerHTML = " ";
+                gameBtn[i].disabled = false
+            }
         }
     }
     checkWinner()
 }
+
 function checkWinner() {
     if (gameBtn[0].innerHTML == "X" && gameBtn[1].innerHTML == "X" && gameBtn[2].innerHTML == "X" ||
         gameBtn[3].innerHTML == "X" && gameBtn[4].innerHTML == "X" && gameBtn[5].innerHTML == "X" ||
@@ -55,6 +65,9 @@ function checkWinner() {
             rowO.setAttribute("class", "win_o")
             rowO.innerHTML = "-O- IS LOOSER"
             tryAgain()
+        }
+        if (xScore.innerHTML = xScoreCount) {
+            drawCount = 0
         }
         
     }
@@ -87,6 +100,9 @@ function checkWinner() {
             rowO.setAttribute("class", "win_o")
             rowO.innerHTML = "-O- IS WINNER"
             tryAgain()
+        }
+        if (oScore.innerHTML = oScoreCount) {
+            drawCount = 0
         }
     }
 }
