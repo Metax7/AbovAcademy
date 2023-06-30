@@ -1,0 +1,191 @@
+body {
+  height: 100vh;
+  padding-top: 30px;
+  margin: 0 auto;
+  background-image: url(../img/millionaire-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.text-custom {
+  font-size: 10px;
+}
+
+#looser {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  color: white;
+  display: none;
+  z-index: 100;
+}
+
+#winner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  flex-direction: column;
+  color: white;
+  display: none;
+  z-index: 100;
+}
+#winner #again {
+  font-size: 40px;
+  padding: 10px 30px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  border-color: #fff;
+}
+
+#game {
+  width: 80%;
+  height: 90%;
+  background: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  color: white;
+}
+#game .quests {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#game .quests .quest_style h1 {
+  font-size: 50px;
+}
+#game .quests .quest_style .quests_btn {
+  display: flex;
+  flex-wrap: wrap;
+}
+#game .quests .quest_style .quests_btn button {
+  width: 50%;
+  height: 50px;
+  cursor: pointer;
+  border: solid;
+  outline: none;
+}
+#game .quests #quest1 {
+  display: block;
+}
+#game .quests #quest2 {
+  display: none;
+}
+#game .quests #quest3 {
+  display: none;
+}
+#game .quests #quest4 {
+  display: none;
+}
+#game .quests #quest5 {
+  display: none;
+}
+#game .quests #animated {
+  animation-name: ankap;
+  animation-duration: 0.5s;
+  animation-iteration-count: 6;
+  background-color: silver;
+}
+@keyframes ankap {
+  from {
+    background-color: silver;
+  }
+  to {
+    background-color: orange;
+  }
+}
+#game #time {
+  display: none;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+#game #time #interval {
+  font-size: 100px;
+  background-color: tomato;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+#game .support_price {
+  display: flex;
+  justify-content: space-between;
+}
+#game .support_price .support {
+  padding: 10px 30px;
+  position: relative;
+}
+#game .support_price .support .audience_style {
+  display: none;
+}
+#game .support_price .support .call_style {
+  position: absolute;
+  display: none;
+}
+#game .support_price .support .call_style img {
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid tomato;
+  position: relative;
+  left: 85px;
+}
+#game .support_price .support .call_style p {
+  background-color: #fff;
+  color: #000000;
+  padding: 10px 50px;
+  text-align: center;
+  border: 3px solid tomato;
+  border-radius: 8px;
+}
+#game .support_price .support .call_style p span {
+  color: tomato;
+}
+#game .support_price .support .support_list ul {
+  display: flex;
+}
+#game .support_price .support .support_list ul li button {
+  margin-right: 20px;
+  background-color: tomato;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+#game .support_price .price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px 30px;
+  border: 1px solid tomato;
+}
+#game .support_price .price .price_list ul li {
+  background-color: tomato;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

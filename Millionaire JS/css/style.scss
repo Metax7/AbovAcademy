@@ -1,0 +1,232 @@
+body {
+    height: 100vh;
+    padding-top: 30px;
+    margin: 0 auto;
+    background-image: url(../img/millionaire-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.text-custom {
+    font-size: 10px;
+}
+
+#looser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    font-size: 160px;
+    color: white;
+    display: none;
+    z-index: 100;
+}
+
+#winner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    font-size: 160px;
+    flex-direction: column;
+    color: white;
+    display: none;
+    z-index: 100;
+
+    #again {
+        font-size: 40px;
+        padding: 10px 30px;
+        background-color: tomato;
+        color: white;
+        cursor: pointer;
+        border-color: #fff;
+    }
+}
+
+#game {
+    width: 80%;
+    height: 90%;
+    background: rgba($color: #000000, $alpha: .8);
+    margin: auto;
+    color: white;
+    // display: flex;
+
+    .quests {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .quest_style {
+            h1 {
+                font-size: 50px;
+            }
+
+            .quests_btn {
+                display: flex;
+                flex-wrap: wrap;
+
+                button {
+                    width: 50%;
+                    height: 50px;
+                    cursor: pointer;
+                    border: solid;
+                    outline: none;
+                }
+            }
+        }
+
+        #quest1 {
+            display: block;
+        }
+
+        #quest2 {
+            display: none;
+        }
+
+        #quest3 {
+            display: none;
+        }
+
+        #quest4 {
+            display: none;
+        }
+
+        #quest5 {
+            display: none;
+        }
+
+        #animated {
+            animation-name: ankap;
+            animation-duration: .5s;
+            animation-iteration-count: 6;
+            background-color: silver;
+
+            @keyframes ankap {
+                from {
+                    background-color: silver;
+                }
+
+                to {
+                    background-color: orange;
+                }
+            }
+        }
+    }
+
+    #time {
+        display: none;
+        margin-top: 30px;
+        margin-right: 100px;
+
+        #interval {
+            font-size: 100px;
+            background-color: tomato;
+            color: white;
+            padding: 15px 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+    }
+
+    .support_price {
+        display: flex;
+        justify-content: space-between;
+
+        .support {
+            padding: 10px 30px;
+            position: relative;
+
+            .audience_style {
+                display: none;
+            }
+
+            .call_style {
+                position: absolute;
+                display: none;
+
+                img {
+                    width: 100px;
+                    height: 90px;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                    border: 3px solid tomato;
+                    position: relative;
+                    left: 85px;
+                }
+
+                p {
+                    background-color: #fff;
+                    color: #000000;
+                    padding: 10px 50px;
+                    text-align: center;
+                    border: 3px solid tomato;
+                    border-radius: 8px;
+
+                    span {
+                        color: tomato;
+                    }
+                }
+
+            }
+
+            .support_list {
+                ul {
+                    display: flex;
+
+                    li {
+                        button {
+                            margin-right: 20px;
+                            background-color: tomato;
+                            padding: 10px 15px;
+                            border-radius: 50%;
+                            border: 2px solid white;
+                            cursor: pointer;
+                            color: white;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 10px 30px;
+            border: 1px solid tomato;
+
+            .price_list {
+                ul {
+
+                    li {
+                        background-color: tomato;
+                        margin-bottom: 15px;
+                        text-align: center;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
