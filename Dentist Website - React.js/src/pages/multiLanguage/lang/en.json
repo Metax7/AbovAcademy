@@ -1,0 +1,27 @@
+{
+  "nav_home": "HOME",
+  "nav_about": "ABOUT",
+  "nav_service": "SERVICE",
+  "nav_opinion": "OPINION",
+  "nav_pricing": "PRICING",
+  "nav_ourTeam": "OUR TEAM",
+  "nav_blog": "BLOG",
+
+  "homeFirst_title": "WELCOME TO DECARE",
+  "homeFirst_bigTitle": "We Are Best Dental Service",
+  "homeFirst_description": "Discover top-quality dental care tailored to your needs. Our comprehensive dental services include preventive treatments, restorative procedures, cosmetic enhancements, and specialized solutions. Achieve a healthy, confident smile with our skilled professionals.",
+  "homeFirst_placeholder": "Your Email Address...",
+  "homeFirst_button": "GET CALL BACК",
+
+  "service_title": "OUR SERVICES",
+  "service_bigTitle": "What We Provide",
+  "service_rootCanal": "Root Canal",
+  "service_alignmentTeeth": "Alignment Teeth",
+  "service_cosmeticTeeth": "Cosmetic Teeth",
+  "service_oralHygiene": "Oral Hygiene",
+  "service_liveAdvisory": "Live Advisory",
+  "service_cavityInspection": "Cavity Inspection",
+
+  "about_aboutUs": "ABOUT US",
+  "about_title": "We Care For Your Dental Helath"
+}
